@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<style>
+
+* {
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    body {
+        background-color: rgb(11, 5, 5);
+    }
+
+    .max-width {
+        max-width: 500px;
+        padding: 10px;
+        margin-top: 10%;
+        background-color: #FFF;
+        box-shadow: 0 0 5px #FFF;
+        text-align: center;
+    }
+
+    h1 {
+        font-family: t;
+        margin-top: 20px;
+    }
+
+    button {
+        padding: 10px;
+        border: none;
+        outline: none;
+        font-family: 'Segoe UI';
+        font-size: 1.1em;
+        transition: all .5s;
+        cursor: pointer;
+        border-radius: 20px;
+    }
+
+    button:active {
+        background-color: #111;
+    }
+
+    .bg-green {
+        background-color: #b2d1a1;
+    }
+
+    .bg-yellow {
+        background-color: #d1cba1;
+    }
+
+    .bg-red {
+        background-color: #d18e8e;
+    
+    }
+    .bg-red:hover{
+        background: #d41616;
+    }
+    .bg-yellow:hover{
+        background: #f5d908;
+    }
+    .bg-green:hover{
+        background: #5dc128;
+    }
+</style>
+
+<div class="max-width">
+     <button onclick="start()" class="bg-green"> start</button>
+     <button onclick="pause()" class="bg-yellow"> pause</button>
+     <button onclick="stop()" class="bg-red"> stop</button>
+     <h1 id="counter"> 00:00:00</h1>
+</div>
+    <script src="cronometro.js"></script>
+</body>
+</html>
