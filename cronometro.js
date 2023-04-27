@@ -25,6 +25,16 @@ function stop() {
 
 };
 
+function restart() {
+    clearInterval(cron);
+    hh = 0;
+    mm = 0;
+    ss = 0;
+
+    document.getElementById('counter').innerText = '00:00:00';
+    cron = setInterval(() => { timer(); }, tempo)
+};
+
 function timer() {
 
     ss++;
